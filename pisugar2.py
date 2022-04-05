@@ -26,7 +26,7 @@ class UPS:
             address = 0x75
             if self._is_pro:
                 low = self._bus.read_byte_data(address, 0x64)
-                high = self._bus.read_byte_date(address, 0x65)
+                high = self._bus.read_byte_data(address, 0x65)
             else:
                 low = self._bus.read_byte_data(address, 0xa2)
                 high = self._bus.read_byte_data(address, 0xa3)
