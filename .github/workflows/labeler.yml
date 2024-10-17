@@ -122,8 +122,8 @@ jobs:
                   owner: context.repo.owner,
                   repo: context.repo.repo,
                   name: label.name,
-                  color: label.color,
                   description: label.description || '',
+                  color: label.color
                 });
               } catch (error) {
                 if (error.status === 422) {
