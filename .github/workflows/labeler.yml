@@ -132,3 +132,4 @@ jobs:
                   core.warning(`Failed to create label "${label.name}": ${error.message}`);
                 }
               }
+            }
