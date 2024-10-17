@@ -124,7 +124,7 @@ jobs:
                   name: label.name,
                   color: label.color,
                   description: label.description || '',
-                }
+                });
               } catch (error) {
                 if (error.status === 422) {
                   core.info(`Label "${label.name}" already exists`);
